@@ -25,7 +25,10 @@ func demo_DispatchQueue() {
 //    demo_DispatchWorkItem()
     
     // DispatchGroup
-    demo_DispatchGroup()
+//    demo_DispatchGroup()
+    
+    // 取消任务block
+    demo_cancelTask()
 }
 
 func demo_normal() {
@@ -146,5 +149,38 @@ func demo_DispatchGroup() {
 }
 
 
+// 取消正在执行的任务
+// 使用 DispatchWorkItem 的cancel()方法取消尚未执行的任务
+// 注意：对已经在执行的任务不起作用，只能取消尚未执行的任务。
+// 这个函数用异步的方式取消指定的 block。取消操作使将来执行 block 立即返回，但是对已经在执行的 block 没有任何影响。当一个 block 被取消时，它会立即释放捕获的资源。如果要在一个 block 中对某些对象进行释放操作，在取消这个 block 的时候，需要确保内存不会泄漏。
 
+func demo_cancelTask() {
+    // 创建队列，若不指定参数，则默认就是串行执行的队列(serial)
+    let queue = DispatchQueue(label: "com.lg.serialQueue")
+    
+    let item1 = DispatchWorkItem {
+        print("item1 start")
+        sleep(2)
+        print("item1 end")
+    }
+    
+    let item2 = DispatchWorkItem {
+        print("item2 start")
+        sleep(2)
+        print("item2 end")
+    }
+    
+    queue.async(execute: item1)
+    queue.async(execute: item2)
+    
+    // 等待1s，让第一个任务开始运行
+    sleep(1)
+
+    item1.cancel()
+    print("尝试取消第一个任务")
+    item2.cancel()
+    print("尝试取消第二个任务")
+    
+    // 通过打印，可以看到，cancel()对已经在执行的任务item1不起作用，只能取消尚未执行的任务item2
+}
 
