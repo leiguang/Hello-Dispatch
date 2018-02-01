@@ -7,28 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A5AF2E22022E0250024877F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AF2E12022E0250024877F /* main.swift */; };
+		9A5AF2EF2022E2960024877F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AF2EE2022E2960024877F /* AppDelegate.swift */; };
+		9A5AF2F12022E2960024877F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AF2F02022E2960024877F /* ViewController.swift */; };
+		9A5AF2F32022E2960024877F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5AF2F22022E2960024877F /* Assets.xcassets */; };
+		9A5AF2F62022E2960024877F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5AF2F42022E2960024877F /* Main.storyboard */; };
+		9A5AF2FD2022E7610024877F /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5AF2FC2022E7610024877F /* DispatchQueue.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		9A5AF2DC2022E0250024877F /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		9A5AF2DE2022E0250024877F /* Hello-Dispatch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Hello-Dispatch"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A5AF2E12022E0250024877F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9A5AF2EC2022E2960024877F /* Hello-Dispatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello-Dispatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A5AF2EE2022E2960024877F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A5AF2F02022E2960024877F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A5AF2F22022E2960024877F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A5AF2F52022E2960024877F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A5AF2F72022E2960024877F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A5AF2F82022E2960024877F /* Hello_Dispatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hello_Dispatch.entitlements; sourceTree = "<group>"; };
+		9A5AF2FC2022E7610024877F /* DispatchQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9A5AF2DB2022E0250024877F /* Frameworks */ = {
+		9A5AF2E92022E2960024877F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,23 +39,21 @@
 		9A5AF2D52022E0250024877F = {
 			isa = PBXGroup;
 			children = (
-				9A5AF2E02022E0250024877F /* Hello-Dispatch */,
-				9A5AF2DF2022E0250024877F /* Products */,
+				9A5AF2ED2022E2960024877F /* Hello-Dispatch */,
+				9A5AF2EC2022E2960024877F /* Hello-Dispatch.app */,
 			);
 			sourceTree = "<group>";
 		};
-		9A5AF2DF2022E0250024877F /* Products */ = {
+		9A5AF2ED2022E2960024877F /* Hello-Dispatch */ = {
 			isa = PBXGroup;
 			children = (
-				9A5AF2DE2022E0250024877F /* Hello-Dispatch */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9A5AF2E02022E0250024877F /* Hello-Dispatch */ = {
-			isa = PBXGroup;
-			children = (
-				9A5AF2E12022E0250024877F /* main.swift */,
+				9A5AF2EE2022E2960024877F /* AppDelegate.swift */,
+				9A5AF2FC2022E7610024877F /* DispatchQueue.swift */,
+				9A5AF2F02022E2960024877F /* ViewController.swift */,
+				9A5AF2F22022E2960024877F /* Assets.xcassets */,
+				9A5AF2F42022E2960024877F /* Main.storyboard */,
+				9A5AF2F72022E2960024877F /* Info.plist */,
+				9A5AF2F82022E2960024877F /* Hello_Dispatch.entitlements */,
 			);
 			path = "Hello-Dispatch";
 			sourceTree = "<group>";
@@ -65,13 +61,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9A5AF2DD2022E0250024877F /* Hello-Dispatch */ = {
+		9A5AF2EB2022E2960024877F /* Hello-Dispatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A5AF2E52022E0250024877F /* Build configuration list for PBXNativeTarget "Hello-Dispatch" */;
+			buildConfigurationList = 9A5AF2F92022E2960024877F /* Build configuration list for PBXNativeTarget "Hello-Dispatch" */;
 			buildPhases = (
-				9A5AF2DA2022E0250024877F /* Sources */,
-				9A5AF2DB2022E0250024877F /* Frameworks */,
-				9A5AF2DC2022E0250024877F /* CopyFiles */,
+				9A5AF2E82022E2960024877F /* Sources */,
+				9A5AF2E92022E2960024877F /* Frameworks */,
+				9A5AF2EA2022E2960024877F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -79,8 +75,8 @@
 			);
 			name = "Hello-Dispatch";
 			productName = "Hello-Dispatch";
-			productReference = 9A5AF2DE2022E0250024877F /* Hello-Dispatch */;
-			productType = "com.apple.product-type.tool";
+			productReference = 9A5AF2EC2022E2960024877F /* Hello-Dispatch.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -92,7 +88,7 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "雷广";
 				TargetAttributes = {
-					9A5AF2DD2022E0250024877F = {
+					9A5AF2EB2022E2960024877F = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -104,27 +100,53 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 9A5AF2D52022E0250024877F;
-			productRefGroup = 9A5AF2DF2022E0250024877F /* Products */;
+			productRefGroup = 9A5AF2D52022E0250024877F;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9A5AF2DD2022E0250024877F /* Hello-Dispatch */,
+				9A5AF2EB2022E2960024877F /* Hello-Dispatch */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		9A5AF2EA2022E2960024877F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5AF2F32022E2960024877F /* Assets.xcassets in Resources */,
+				9A5AF2F62022E2960024877F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		9A5AF2DA2022E0250024877F /* Sources */ = {
+		9A5AF2E82022E2960024877F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A5AF2E22022E0250024877F /* main.swift in Sources */,
+				9A5AF2F12022E2960024877F /* ViewController.swift in Sources */,
+				9A5AF2EF2022E2960024877F /* AppDelegate.swift in Sources */,
+				9A5AF2FD2022E7610024877F /* DispatchQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9A5AF2F42022E2960024877F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A5AF2F52022E2960024877F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9A5AF2E32022E0250024877F /* Debug */ = {
@@ -233,19 +255,31 @@
 			};
 			name = Release;
 		};
-		9A5AF2E62022E0250024877F /* Debug */ = {
+		9A5AF2FA2022E2960024877F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hello-Dispatch/Hello_Dispatch.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Hello-Dispatch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leiguang.Hello-Dispatch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		9A5AF2E72022E0250024877F /* Release */ = {
+		9A5AF2FB2022E2960024877F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Hello-Dispatch/Hello_Dispatch.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Hello-Dispatch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leiguang.Hello-Dispatch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -263,11 +297,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A5AF2E52022E0250024877F /* Build configuration list for PBXNativeTarget "Hello-Dispatch" */ = {
+		9A5AF2F92022E2960024877F /* Build configuration list for PBXNativeTarget "Hello-Dispatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A5AF2E62022E0250024877F /* Debug */,
-				9A5AF2E72022E0250024877F /* Release */,
+				9A5AF2FA2022E2960024877F /* Debug */,
+				9A5AF2FB2022E2960024877F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
